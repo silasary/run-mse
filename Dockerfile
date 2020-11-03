@@ -37,4 +37,4 @@ RUN cmake .. -DCMAKE_BUILD_TYPE=Release
 RUN cmake --build .
 
 ADD entrypoint.sh .
-ENTRYPOINT [ "/bin/bash", 'entrypoint.sh' ]
+ENTRYPOINT [ "/bin/bash", '/src/build/entrypoint.sh' ]
