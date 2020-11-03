@@ -1,0 +1,12 @@
+name: 'Run MSE'
+description: 'Calls MSE'
+author: 'Katelyn Gigante <clockwork.singularity@gmail.com>'
+inputs:
+    args:
+        description: 'Arguments provided to MSE'
+        default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.args }}
