@@ -7,6 +7,6 @@ inputs:
         default: ''
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://silasary/magicseteditor:latest'
   args:
     - ${{ inputs.args }}
