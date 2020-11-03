@@ -36,4 +36,5 @@ RUN ln -s wx-3.1-unofficial3 /usr/include/wx-3.1-unofficial
 RUN cmake .. -DCMAKE_BUILD_TYPE=Release
 RUN cmake --build .
 
-ENTRYPOINT [ "/bin/bash" ]
+ADD entrypoint.sh .
+ENTRYPOINT [ "/bin/bash", 'entrypoint.sh' ]
